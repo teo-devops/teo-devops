@@ -1,68 +1,112 @@
-## Mateo Gil — DevOps / Platform Engineering
+## Platform & MLOps Engineer
 
-Infraestructura, Kubernetes y datos.
+**K8s · Bare-Metal · Argo CD · Cilium  |  Kubeflow · MLflow  |  PySpark  |  Data Spaces (EDC, Gaia-X)  |  MSc Big Data & AI**
 
-Los repos están agrupados en 7 áreas. Cada área es una **lista navegable** y a la vez
-un **topic** `area-*`, así que puedes recorrerlas o filtrarlas:
+Diseño y opero clústeres Kubernetes sobre bare-metal —GitOps con Argo CD, red con Cilium,
+backup con Velero— y los pipelines de datos y modelos que corren encima.
+En **i2CAT** trabajo sobre data spaces federados (EDC, Gaia-X). Cursando el MSc en Big Data & AI.
 
-| Área | Lista | Repos |
+---
+
+### Destacados
+
+- **[Argo-cd-Labs](https://github.com/teo-devops/Argo-cd-Labs)** — Plano de control GitOps multi-tenant con Argo CD sobre Kubernetes bare-metal
+- **[NYC-Spark-Mobility](https://github.com/teo-devops/NYC-Spark-Mobility)** — Lab distribuido NYC Taxi con arquitectura medallion, Spark 3.5 y tracking en MLflow
+- **[Kubernetes-Backup-Tool](https://github.com/teo-devops/Kubernetes-Backup-Tool)** — Despliegue de Velero en cualquier cluster Kubernetes con MinIO externo como backend S3
+- **[adk-agent-workflow](https://github.com/teo-devops/adk-agent-workflow)** — Labs de Google ADK: de un agente simple a workflows deterministas y multi-agente
+
+### Repositorios por área
+
+Cada área es un topic filtrable y una lista navegable.
+
+| Área | Repos | Explorar |
 |---|---|---|
-| ☸️ Kubernetes | [`/stars/teo-devops/lists/kubernetes`](https://github.com/stars/teo-devops/lists/kubernetes) | 5 |
-| 📈 MLOps | [`/stars/teo-devops/lists/mlops`](https://github.com/stars/teo-devops/lists/mlops) | 6 |
-| 🗄️ Data Engineering | [`/stars/teo-devops/lists/data-engineering`](https://github.com/stars/teo-devops/lists/data-engineering) | 5 |
-| 🔧 DevOps | [`/stars/teo-devops/lists/devops`](https://github.com/stars/teo-devops/lists/devops) | 4 |
-| 🧪 Testing | [`/stars/teo-devops/lists/testing`](https://github.com/stars/teo-devops/lists/testing) | 3 |
-| 🤖 AI Engineering | [`/stars/teo-devops/lists/ai-engineering`](https://github.com/stars/teo-devops/lists/ai-engineering) | 2 |
-| 🏗️ IaC | [`/stars/teo-devops/lists/iac`](https://github.com/stars/teo-devops/lists/iac) | 1 |
+| ☸️ **Kubernetes** | 4 | [lista](https://github.com/stars/teo-devops/lists/kubernetes) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-kubernetes&type=repositories) |
+| 📈 **MLOps** | 5 | [lista](https://github.com/stars/teo-devops/lists/mlops) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-mlops&type=repositories) |
+| 🗄️ **Data Engineering** | 5 | [lista](https://github.com/stars/teo-devops/lists/data-engineering) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-data-engineering&type=repositories) |
+| 🤖 **AI Engineering** | 2 | [lista](https://github.com/stars/teo-devops/lists/ai-engineering) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-ai-engineering&type=repositories) |
+| 🔧 **DevOps** | 4 | [lista](https://github.com/stars/teo-devops/lists/devops) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-devops&type=repositories) |
+| 🏗️ **IaC** | 1 | [lista](https://github.com/stars/teo-devops/lists/iac) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-iac&type=repositories) |
+| 🧪 **Testing** | 3 | [lista](https://github.com/stars/teo-devops/lists/testing) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-testing&type=repositories) |
 
-### ☸️ Kubernetes — [`area-kubernetes`](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-kubernetes&type=repositories)
-| Repo | Qué es |
-|---|---|
-| [Argo-cd-Labs](https://github.com/teo-devops/Argo-cd-Labs) | Plano de control GitOps multi-tenant sobre bare-metal |
-| [Kubernetes-Backup-Tool](https://github.com/teo-devops/Kubernetes-Backup-Tool) | Velero + MinIO externo como backend S3 |
-| [kafka-strimizi-k8s](https://github.com/teo-devops/kafka-strimizi-k8s) | Kafka con el operador Strimzi |
-| [jaeger-operator-kubernetes](https://github.com/teo-devops/jaeger-operator-kubernetes) | Tracing distribuido con Jaeger Operator |
+<details>
+<summary><b>☸️ Kubernetes</b> — 4 repos</summary>
 
-### 🏗️ Infraestructura como código — [`area-iac`](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-iac&type=repositories)
-| Repo | Qué es |
-|---|---|
-| [azure-infra](https://github.com/teo-devops/azure-infra) | Terraform + Ansible sobre Azure |
+| Repo | Stack | Qué es |
+|---|---|---|
+| [Argo-cd-Labs](https://github.com/teo-devops/Argo-cd-Labs) | `argocd` · `continuous-delivery` · `gitops` | Plano de control GitOps multi-tenant con Argo CD sobre Kubernetes bare-metal |
+| [jaeger-operator-kubernetes](https://github.com/teo-devops/jaeger-operator-kubernetes) | `jaeger` · `observability` · `operator` | Distributed tracing en Kubernetes con el Jaeger Operator |
+| [kafka-strimizi-k8s](https://github.com/teo-devops/kafka-strimizi-k8s) | `kafka` · `operator` · `streaming` | Kafka sobre Kubernetes con el operador Strimzi |
+| [Kubernetes-Backup-Tool](https://github.com/teo-devops/Kubernetes-Backup-Tool) | `backup` · `disaster-recovery` · `minio` | Despliegue de Velero en cualquier cluster Kubernetes con MinIO externo como backend S3 |
 
-### 🔧 DevOps / CI-CD — [`area-devops`](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-devops&type=repositories)
-| Repo | Qué es |
-|---|---|
-| [todo-list-aws](https://github.com/teo-devops/todo-list-aws) | AWS SAM serverless con pipelines Jenkins |
-| [Jenkins](https://github.com/teo-devops/Jenkins) | Pipeline con unit / service / performance testing |
-| [nginx-crash-course](https://github.com/teo-devops/nginx-crash-course) | Reverse proxy, load balancing y TLS |
-| [minIO-docker](https://github.com/teo-devops/minIO-docker) | Almacenamiento S3-compatible para labs |
+</details>
 
-### 🤖 AI Engineering — [`area-ai-engineering`](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-ai-engineering&type=repositories)
-| Repo | Qué es |
-|---|---|
-| [adk-agent-workflow](https://github.com/teo-devops/adk-agent-workflow) | Workflows multi-agente con Google ADK |
-| [mcp_pg_admin_docker](https://github.com/teo-devops/mcp_pg_admin_docker) | Lab PostgreSQL para enseñar Model Context Protocol |
+<details>
+<summary><b>📈 MLOps</b> — 5 repos</summary>
 
-### 📈 MLOps / Machine Learning — [`area-mlops`](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-mlops&type=repositories)
-| Repo | Qué es |
-|---|---|
-| [NYC-Spark-Mobility](https://github.com/teo-devops/NYC-Spark-Mobility) | Arquitectura medallion con Spark 3.5 y MLflow |
-| [taxi-app-ai](https://github.com/teo-devops/taxi-app-ai) | NYC TLC end-to-end: XGBoost + Streamlit |
-| [spark_ML](https://github.com/teo-devops/spark_ML) | ML distribuido con Spark MLlib |
-| [fashion_app_cnn](https://github.com/teo-devops/fashion_app_cnn) | Clasificación de imágenes con CNN |
-| [book_app.ai](https://github.com/teo-devops/book_app.ai) | Notebooks + src de un proyecto ML sobre libros |
+| Repo | Stack | Qué es |
+|---|---|---|
+| [book_app.ai](https://github.com/teo-devops/book_app.ai) | `jupyter` · `machine-learning` · `python` | Proyecto de ML sobre libros: notebooks de exploracion y codigo fuente en src |
+| [fashion_app_cnn](https://github.com/teo-devops/fashion_app_cnn) | `cnn` · `computer-vision` · `deep-learning` | Clasificacion de imagenes de moda con redes convolucionales |
+| [NYC-Spark-Mobility](https://github.com/teo-devops/NYC-Spark-Mobility) | `docker` · `medallion-architecture` · `mlflow` | Lab distribuido NYC Taxi con arquitectura medallion, Spark 3.5 y tracking en MLflow |
+| [spark_ML](https://github.com/teo-devops/spark_ML) | `jupyter` · `machine-learning` · `mllib` | Machine learning distribuido con Spark MLlib en notebooks |
+| [taxi-app-ai](https://github.com/teo-devops/taxi-app-ai) | `eda` · `machine-learning` · `streamlit` | Analisis end-to-end del dataset NYC TLC con XGBoost y demo en Streamlit |
 
-### 🗄️ Data Engineering — [`area-data-engineering`](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-data-engineering&type=repositories)
-| Repo | Qué es |
-|---|---|
-| [cluster-hadoop-docker](https://github.com/teo-devops/cluster-hadoop-docker) | Cluster Hadoop multi-nodo dockerizado |
-| [cluster-spark-docker](https://github.com/teo-devops/cluster-spark-docker) | Cluster Spark dockerizado |
-| [Mysql-sqoop-Docker](https://github.com/teo-devops/Mysql-sqoop-Docker) | Ingesta MySQL → HDFS con Sqoop |
-| [Mongo_DB](https://github.com/teo-devops/Mongo_DB) | Modelado NoSQL y consultas desde Python |
-| [kafka-producer](https://github.com/teo-devops/kafka-producer) | Productor Kafka en Python |
+</details>
 
-### 🧪 Testing / QA — [`area-testing`](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-testing&type=repositories)
-| Repo | Qué es |
-|---|---|
-| [performance-testing](https://github.com/teo-devops/performance-testing) | Pruebas de carga con K6 |
-| [unit-testing-fizzbuzz](https://github.com/teo-devops/unit-testing-fizzbuzz) | TDD en JavaScript |
-| [orange_e2e_testing](https://github.com/teo-devops/orange_e2e_testing) | OrangeHRM para pruebas end-to-end |
+<details>
+<summary><b>🗄️ Data Engineering</b> — 5 repos</summary>
+
+| Repo | Stack | Qué es |
+|---|---|---|
+| [cluster-hadoop-docker](https://github.com/teo-devops/cluster-hadoop-docker) | `big-data` · `cluster` · `docker` | Cluster Hadoop multi-nodo dockerizado para labs de Big Data |
+| [cluster-spark-docker](https://github.com/teo-devops/cluster-spark-docker) | `big-data` · `cluster` · `docker` | Cluster Spark dockerizado con notebooks para procesamiento distribuido |
+| [kafka-producer](https://github.com/teo-devops/kafka-producer) | `kafka` · `producer` · `python` | Productor Kafka en Python para alimentar el lab de Strimzi |
+| [Mongo_DB](https://github.com/teo-devops/Mongo_DB) | `mongodb` · `nosql` · `python` | Labs de MongoDB: modelado NoSQL y consultas desde Python |
+| [Mysql-sqoop-Docker](https://github.com/teo-devops/Mysql-sqoop-Docker) | `data-ingestion` · `docker` · `hdfs` | Ingesta de MySQL a HDFS con Apache Sqoop sobre Docker |
+
+</details>
+
+<details>
+<summary><b>🤖 AI Engineering</b> — 2 repos</summary>
+
+| Repo | Stack | Qué es |
+|---|---|---|
+| [adk-agent-workflow](https://github.com/teo-devops/adk-agent-workflow) | `ai-agents` · `gemini` · `google-adk` | Labs de Google ADK: de un agente simple a workflows deterministas y multi-agente |
+| [mcp_pg_admin_docker](https://github.com/teo-devops/mcp_pg_admin_docker) | `docker` · `mcp` · `model-context-protocol` | Lab dockerizado de PostgreSQL y pgAdmin para ensenar integracion via Model Context Protocol |
+
+</details>
+
+<details>
+<summary><b>🔧 DevOps</b> — 4 repos</summary>
+
+| Repo | Stack | Qué es |
+|---|---|---|
+| [Jenkins](https://github.com/teo-devops/Jenkins) | `ci-cd` · `jenkins` · `testing` | Proyecto DevOps and Cloud (UNIR): unit, service y performance testing en pipeline Jenkins |
+| [minIO-docker](https://github.com/teo-devops/minIO-docker) | `docker` · `minio` · `object-storage` | Stack MinIO dockerizado como almacenamiento S3 compatible para labs |
+| [nginx-crash-course](https://github.com/teo-devops/nginx-crash-course) | `learning` · `load-balancing` · `nginx` | Curso practico de Nginx: reverse proxy, load balancing y TLS |
+| [todo-list-aws](https://github.com/teo-devops/todo-list-aws) | `aws` · `ci-cd` · `jenkins` | API ToDo serverless en AWS SAM con pipelines CI/CD en Jenkins |
+
+</details>
+
+<details>
+<summary><b>🏗️ IaC</b> — 1 repos</summary>
+
+| Repo | Stack | Qué es |
+|---|---|---|
+| [azure-infra](https://github.com/teo-devops/azure-infra) | `ansible` · `azure` · `hcl` | Infraestructura Azure con Terraform y provisioning con Ansible |
+
+</details>
+
+<details>
+<summary><b>🧪 Testing</b> — 3 repos</summary>
+
+| Repo | Stack | Qué es |
+|---|---|---|
+| [orange_e2e_testing](https://github.com/teo-devops/orange_e2e_testing) | `docker` · `e2e-testing` · `mysql` | Entorno OrangeHRM con Docker Compose para pruebas end-to-end |
+| [performance-testing](https://github.com/teo-devops/performance-testing) | `docker` · `k6` · `load-testing` | API Node/Express/MongoDB dockerizada para pruebas de carga con K6 |
+| [unit-testing-fizzbuzz](https://github.com/teo-devops/unit-testing-fizzbuzz) | `javascript` · `jest` · `kata` | Kata FizzBuzz con TDD y pruebas unitarias en JavaScript |
+
+</details>
+
+<sub>Índice generado desde los topics <code>area-*</code> de cada repo.</sub>
