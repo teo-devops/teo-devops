@@ -4,7 +4,7 @@
 
 Diseño y opero clústeres Kubernetes sobre bare-metal —GitOps con Argo CD, red con Cilium,
 backup con Velero— y los pipelines de datos y modelos que corren encima.
-En **i2CAT** trabajo sobre data spaces federados (EDC, Gaia-X). Cursando el MSc en Big Data & AI.
+Trabajo sobre data spaces federados (EDC, Gaia-X). Cursando el MSc en Big Data & AI.
 
 ---
 
