@@ -1,0 +1,68 @@
+# Lo que el generador NO puede sacar de los topics: la cabecera, los destacados
+# y el orden, emoji e introducción de cada área. Todo lo demás —qué repos hay,
+# a qué área pertenecen, su stack y su descripción— sale de GitHub.
+#
+# Regenerar:  python3 scripts/generar_readme.py          (o --check para comparar)
+
+usuario = "teo-devops"
+
+# Topics que clasifican pero no son stack: no salen en la columna Stack.
+topics_ocultos = ["dataspaces", "master-bigdata", "learning", "teaching"]
+
+cabecera = """
+## Platform & MLOps Engineer
+
+**K8s · Bare-Metal · Argo CD · Cilium  |  Kubeflow · MLflow  |  PySpark  |  Data Spaces (EDC, Gaia-X)  |  MSc Big Data & AI**
+
+Diseño y opero clústeres Kubernetes sobre bare-metal —GitOps con Argo CD, red con Cilium,
+backup con Velero— y los pipelines de datos y modelos que corren encima.
+Trabajo sobre data spaces federados (EDC, Gaia-X). Cursando el MSc en Big Data & AI.
+"""
+
+# Los destacados, en orden. La descripción sale del repo.
+destacados = ["Argo-cd-Labs", "NYC-Spark-Mobility", "Kubernetes-Backup-Tool", "adk-agent-workflow"]
+
+# Las áreas, en el orden en que se listan. La clave es el topic sin el prefijo `area-`.
+# Un área que exista como topic y no esté aquí se añade al final con su nombre en crudo.
+[areas.dataspaces]
+emoji = "🌐"
+nombre = "Dataspaces"
+intro = """
+Una plataforma de dataspace con la base de [Eclipse Dataspace Components](https://github.com/eclipse-edc)
+**congelada**: cada imagen se construye contra una copia inmutable de EDC derivada del tag de git,
+y un escenario MVD reproducible sobre KinD y Argo CD con dos vías de datos (Envoy Gateway PULL,
+Bento PUSH) que hablan Data Plane Signaling.
+"""
+nota = """
+El resto de la plataforma —umbrella con los paquetes Maven congelados, launchers, adaptadores DPS
+en Go, escenario MVD, freezer y skills de agente— está **en privado** mientras se aclara su
+titularidad.
+"""
+
+[areas.kubernetes]
+emoji = "☸️"
+nombre = "Kubernetes"
+
+[areas.mlops]
+emoji = "📈"
+nombre = "MLOps"
+
+[areas.data-engineering]
+emoji = "🗄️"
+nombre = "Data Engineering"
+
+[areas.ai-engineering]
+emoji = "🤖"
+nombre = "AI Engineering"
+
+[areas.devops]
+emoji = "🔧"
+nombre = "DevOps"
+
+[areas.iac]
+emoji = "🏗️"
+nombre = "IaC"
+
+[areas.testing]
+emoji = "🧪"
+nombre = "Testing"
