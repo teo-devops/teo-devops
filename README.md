@@ -21,27 +21,27 @@ Cada área es un topic filtrable y una lista navegable.
 
 | Área | Repos | Explorar |
 |---|---|---|
-| 🌐 **Dataspaces** | 2 públicos | [lista](https://github.com/stars/teo-devops/lists/dataspaces) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-dataspaces&type=repositories) |
-| ☸️ **Kubernetes** | 4 | [lista](https://github.com/stars/teo-devops/lists/kubernetes) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-kubernetes&type=repositories) |
-| 📈 **MLOps** | 5 | [lista](https://github.com/stars/teo-devops/lists/mlops) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-mlops&type=repositories) |
-| 🗄️ **Data Engineering** | 5 | [lista](https://github.com/stars/teo-devops/lists/data-engineering) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-data-engineering&type=repositories) |
-| 🤖 **AI Engineering** | 2 | [lista](https://github.com/stars/teo-devops/lists/ai-engineering) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-ai-engineering&type=repositories) |
-| 🔧 **DevOps** | 4 | [lista](https://github.com/stars/teo-devops/lists/devops) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-devops&type=repositories) |
-| 🏗️ **IaC** | 1 | [lista](https://github.com/stars/teo-devops/lists/iac) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-iac&type=repositories) |
-| 🧪 **Testing** | 3 | [lista](https://github.com/stars/teo-devops/lists/testing) · [topic](https://github.com/search?q=user%3Ateo-devops+topic%3Aarea-testing&type=repositories) |
+| 🌐 **Dataspaces** | 2 | [lista](https://github.com/stars/teo-devops/lists/dataspaces) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-dataspaces&type=repositories) |
+| ☸️ **Kubernetes** | 4 | [lista](https://github.com/stars/teo-devops/lists/kubernetes) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-kubernetes&type=repositories) |
+| 📈 **MLOps** | 5 | [lista](https://github.com/stars/teo-devops/lists/mlops) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-mlops&type=repositories) |
+| 🗄️ **Data Engineering** | 5 | [lista](https://github.com/stars/teo-devops/lists/data-engineering) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-data-engineering&type=repositories) |
+| 🤖 **AI Engineering** | 2 | [lista](https://github.com/stars/teo-devops/lists/ai-engineering) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-ai-engineering&type=repositories) |
+| 🔧 **DevOps** | 4 | [lista](https://github.com/stars/teo-devops/lists/devops) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-devops&type=repositories) |
+| 🏗️ **IaC** | 1 | [lista](https://github.com/stars/teo-devops/lists/iac) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-iac&type=repositories) |
+| 🧪 **Testing** | 3 | [lista](https://github.com/stars/teo-devops/lists/testing) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-testing&type=repositories) |
 
 <details>
-<summary><b>🌐 Dataspaces</b> — plataforma sobre Eclipse EDC</summary>
+<summary><b>🌐 Dataspaces</b> — 2 repos</summary>
 
 Una plataforma de dataspace con la base de [Eclipse Dataspace Components](https://github.com/eclipse-edc)
-**congelada**: cada imagen se construye contra una copia inmutable de EDC derivada del tag de git
-(`v<upstream>-<congelación>-<a.b.c>`), y un escenario MVD reproducible sobre KinD y Argo CD con
-dos vías de datos (Envoy Gateway PULL, Bento PUSH) que hablan Data Plane Signaling.
+**congelada**: cada imagen se construye contra una copia inmutable de EDC derivada del tag de git,
+y un escenario MVD reproducible sobre KinD y Argo CD con dos vías de datos (Envoy Gateway PULL,
+Bento PUSH) que hablan Data Plane Signaling.
 
 | Repo | Stack | Qué es |
 |---|---|---|
-| [Connector](https://github.com/teo-devops/Connector) | `eclipse-edc` · `java` · `gradle` | Fork del connector EDC. La congelación vive en `freeze/v1.0.0-RC1-1`: versión derivada del tag, autodoc y firma adaptados a una copia congelada |
-| [IdentityHub](https://github.com/teo-devops/IdentityHub) | `eclipse-edc` · `java` · `gradle` | Fork del IdentityHub EDC, misma rama de congelación y misma derivación de versión |
+| [Connector](https://github.com/teo-devops/Connector) *(fork)* | `eclipse-edc` · `java` | Fork de eclipse-edc/Connector con la base congelada en freeze/v1.0.0-RC1-1: versión derivada del tag de git, autodoc y firma adaptados |
+| [IdentityHub](https://github.com/teo-devops/IdentityHub) *(fork)* | `eclipse-edc` · `java` | Fork de eclipse-edc/IdentityHub con la base congelada en freeze/v1.0.0-RC1-1: misma derivación de versión que el Connector |
 
 El resto de la plataforma —umbrella con los paquetes Maven congelados, launchers, adaptadores DPS
 en Go, escenario MVD, freezer y skills de agente— está **en privado** mientras se aclara su
@@ -102,9 +102,9 @@ titularidad.
 
 | Repo | Stack | Qué es |
 |---|---|---|
-| [Jenkins](https://github.com/teo-devops/Jenkins) | `ci-cd` · `jenkins` · `testing` | Proyecto DevOps and Cloud (UNIR): unit, service y performance testing en pipeline Jenkins |
+| [Jenkins](https://github.com/teo-devops/Jenkins) *(fork)* | `ci-cd` · `jenkins` · `testing` | Proyecto DevOps and Cloud (UNIR): unit, service y performance testing en pipeline Jenkins |
 | [minIO-docker](https://github.com/teo-devops/minIO-docker) | `docker` · `minio` · `object-storage` | Stack MinIO dockerizado como almacenamiento S3 compatible para labs |
-| [nginx-crash-course](https://github.com/teo-devops/nginx-crash-course) | `learning` · `load-balancing` · `nginx` | Curso practico de Nginx: reverse proxy, load balancing y TLS |
+| [nginx-crash-course](https://github.com/teo-devops/nginx-crash-course) | `load-balancing` · `nginx` · `reverse-proxy` | Curso practico de Nginx: reverse proxy, load balancing y TLS |
 | [todo-list-aws](https://github.com/teo-devops/todo-list-aws) | `aws` · `ci-cd` · `jenkins` | API ToDo serverless en AWS SAM con pipelines CI/CD en Jenkins |
 
 </details>
@@ -129,4 +129,4 @@ titularidad.
 
 </details>
 
-<sub>Índice generado desde los topics <code>area-*</code> de cada repo.</sub>
+<sub>Índice generado por <code>scripts/generar_readme.py</code> desde los topics <code>area-*</code> de cada repo. No se edita a mano.</sub>

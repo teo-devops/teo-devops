@@ -1,0 +1,53 @@
+# El README del perfil se GENERA desde los topics `area-*` de los repos.
+#
+#   - En cada PR y push: comprueba que README.md concuerda con lo generado.
+#   - Cada lunes y a demanda: regenera; si algo cambió (un repo nuevo, una
+#     descripción, un topic), abre un PR con el diff. `main` exige PR, así que
+#     el bot no empuja directo: lo fusionas con un clic.
+name: readme
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  comprobar:
+    if: github.event_name == 'pull_request' || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/generar_readme.py --check
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  regenerar:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/generar_readme.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: PR si cambió
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then echo "README al día"; exit 0; fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          RAMA="readme/regenerado-$(date +%Y%m%d)"
+          git checkout -b "$RAMA"
+          git commit -am "Regenera el índice del perfil desde los topics"
+          git push -f origin "$RAMA"
+          gh pr create --base main --head "$RAMA" \
+            --title "Regenera el índice del perfil" \
+            --body "Diff producido por \`scripts/generar_readme.py\` (workflow \`readme\`). Revisar y fusionar." \
+            || echo "el PR ya existía"
