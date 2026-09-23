@@ -10,7 +10,8 @@ Trabajo sobre data spaces federados (EDC, Gaia-X). Cursando el MSc en Big Data &
 
 ### Destacados
 
-- **[mlops-ct-platform](https://github.com/teo-devops/mlops-ct-platform)** — Plataforma MLOps agnóstica en kind: bucle de continuous training cerrado con GitOps, registro, serving y reentreno por drift
+- **[agent-platform](https://github.com/teo-devops/agent-platform)** — Agentes declarativos (un agent.yaml) sobre ADK, LangGraph y LangChain; MCP, A2A, kagent y MLflow como backend de AgentOps
+- **[mlops-ct-platform](https://github.com/teo-devops/mlops-ct-platform)** — Tool-agnostic MLOps platform demonstrating a closed continuous-training loop on kind (GitOps, registry, serving, drift-driven retraining)
 - **[Argo-cd-Labs](https://github.com/teo-devops/Argo-cd-Labs)** — Plano de control GitOps multi-tenant con Argo CD sobre Kubernetes bare-metal
 - **[NYC-Spark-Mobility](https://github.com/teo-devops/NYC-Spark-Mobility)** — Lab distribuido NYC Taxi con arquitectura medallion, Spark 3.5 y tracking en MLflow
 - **[Kubernetes-Backup-Tool](https://github.com/teo-devops/Kubernetes-Backup-Tool)** — Despliegue de Velero en cualquier cluster Kubernetes con MinIO externo como backend S3
@@ -24,7 +25,7 @@ Cada área es un topic filtrable y una lista navegable.
 |---|---|---|
 | 🌐 **Dataspaces** | 2 | [lista](https://github.com/stars/teo-devops/lists/dataspaces) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-dataspaces&type=repositories) |
 | ☸️ **Kubernetes** | 4 | [lista](https://github.com/stars/teo-devops/lists/kubernetes) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-kubernetes&type=repositories) |
-| 📈 **MLOps** | 6 | [lista](https://github.com/stars/teo-devops/lists/mlops) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-mlops&type=repositories) |
+| 📈 **MLOps** | 7 | [lista](https://github.com/stars/teo-devops/lists/mlops) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-mlops&type=repositories) |
 | 🗄️ **Data Engineering** | 5 | [lista](https://github.com/stars/teo-devops/lists/data-engineering) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-data-engineering&type=repositories) |
 | 🤖 **AI Engineering** | 2 | [lista](https://github.com/stars/teo-devops/lists/ai-engineering) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-ai-engineering&type=repositories) |
 | 🔧 **DevOps** | 4 | [lista](https://github.com/stars/teo-devops/lists/devops) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-devops&type=repositories) |
@@ -63,13 +64,14 @@ titularidad.
 </details>
 
 <details>
-<summary><b>📈 MLOps</b> — 6 repos</summary>
+<summary><b>📈 MLOps</b> — 7 repos</summary>
 
 | Repo | Stack | Qué es |
 |---|---|---|
+| [agent-platform](https://github.com/teo-devops/agent-platform) | `a2a` · `agentops` · `ai-agents` | Agentes declarativos (un agent.yaml) sobre ADK, LangGraph y LangChain; MCP, A2A, kagent y MLflow como backend de AgentOps |
 | [book_app.ai](https://github.com/teo-devops/book_app.ai) | `jupyter` · `machine-learning` · `python` | Proyecto de ML sobre libros: notebooks de exploracion y codigo fuente en src |
 | [fashion_app_cnn](https://github.com/teo-devops/fashion_app_cnn) | `cnn` · `computer-vision` · `deep-learning` | Clasificacion de imagenes de moda con redes convolucionales |
-| [mlops-ct-platform](https://github.com/teo-devops/mlops-ct-platform) | `argocd` · `kserve` · `mlflow` | Plataforma MLOps agnóstica en kind: bucle de continuous training cerrado con GitOps, registro, serving y reentreno por drift |
+| [mlops-ct-platform](https://github.com/teo-devops/mlops-ct-platform) | `argo-workflows` · `argocd` · `continuous-training` | Tool-agnostic MLOps platform demonstrating a closed continuous-training loop on kind (GitOps, registry, serving, drift-driven retraining) |
 | [NYC-Spark-Mobility](https://github.com/teo-devops/NYC-Spark-Mobility) | `docker` · `medallion-architecture` · `mlflow` | Lab distribuido NYC Taxi con arquitectura medallion, Spark 3.5 y tracking en MLflow |
 | [spark_ML](https://github.com/teo-devops/spark_ML) | `jupyter` · `machine-learning` · `mllib` | Machine learning distribuido con Spark MLlib en notebooks |
 | [taxi-app-ai](https://github.com/teo-devops/taxi-app-ai) | `eda` · `machine-learning` · `streamlit` | Analisis end-to-end del dataset NYC TLC con XGBoost y demo en Streamlit |
