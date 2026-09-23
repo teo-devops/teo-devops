@@ -20,7 +20,7 @@ Trabajo sobre data spaces federados (EDC, Gaia-X). Cursando el MSc en Big Data &
 """
 
 # Los destacados, en orden. La descripción sale del repo.
-destacados = ["Argo-cd-Labs", "NYC-Spark-Mobility", "Kubernetes-Backup-Tool", "adk-agent-workflow"]
+destacados = ["agent-platform", "mlops-ct-platform", "Argo-cd-Labs", "NYC-Spark-Mobility", "Kubernetes-Backup-Tool", "adk-agent-workflow"]
 
 # Las áreas, en el orden en que se listan. La clave es el topic sin el prefijo `area-`.
 # Un área que exista como topic y no esté aquí se añade al final con su nombre en crudo.
