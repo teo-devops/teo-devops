@@ -29,7 +29,7 @@ Cada área es un topic filtrable y una lista navegable.
 | 🗄️ **Data Engineering** | 5 | [lista](https://github.com/stars/teo-devops/lists/data-engineering) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-data-engineering&type=repositories) |
 | 🤖 **AI Engineering** | 2 | [lista](https://github.com/stars/teo-devops/lists/ai-engineering) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-ai-engineering&type=repositories) |
 | 🔧 **DevOps** | 4 | [lista](https://github.com/stars/teo-devops/lists/devops) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-devops&type=repositories) |
-| 🏗️ **IaC** | 1 | [lista](https://github.com/stars/teo-devops/lists/iac) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-iac&type=repositories) |
+| 🏗️ **IaC** | 3 | [lista](https://github.com/stars/teo-devops/lists/iac) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-iac&type=repositories) |
 | 🧪 **Testing** | 3 | [lista](https://github.com/stars/teo-devops/lists/testing) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-testing&type=repositories) |
 
 <details>
@@ -114,11 +114,13 @@ titularidad.
 </details>
 
 <details>
-<summary><b>🏗️ IaC</b> — 1 repos</summary>
+<summary><b>🏗️ IaC</b> — 3 repos</summary>
 
 | Repo | Stack | Qué es |
 |---|---|---|
 | [azure-infra](https://github.com/teo-devops/azure-infra) | `ansible` · `azure` · `hcl` | Infraestructura Azure con Terraform y provisioning con Ansible |
+| [platform-proxmox](https://github.com/teo-devops/platform-proxmox) | `ansible` · `bare-metal` · `homelab` | From bare metal to a Proxmox VE cluster of 2..N nodes with one Ansible inventory: unattended install, ZFS, network with rollback, cluster, QDevice, backups. Beta. |
+| [pve-platform-iac](https://github.com/teo-devops/pve-platform-iac) | `ansible` · `github-actions` · `gitops` | GitOps self-service VMs for in-house teams on Proxmox VE: YAML requests → reviewed PR → Terraform (bpg/proxmox) + Ansible. Beta. |
 
 </details>
 
