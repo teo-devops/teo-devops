@@ -5,7 +5,7 @@ La regla que hace posible el índice: cada repositorio lleva EXACTAMENTE UN topi
 `area-*`. Es la «carpeta». El resto de topics es el stack. La descripción del
 repo es el «qué es». Nada de eso se escribe aquí: se lee de GitHub.
 
-Lo que sí se escribe a mano está en `perfil.toml`: cabecera, destacados y el
+Lo que sí se escribe a mano está en `perfil.toml`: cabecera, foco, destacados y el
 orden, emoji e introducción de cada área.
 
     python3 scripts/generar_readme.py            # reescribe README.md
@@ -78,7 +78,11 @@ def generar(cfg: dict, todos: list[dict]) -> str:
         return cfg["areas"].get(a, {"emoji": "📁", "nombre": a})
 
     por_nombre = {r["name"]: r for r in publicos}
-    out = [cfg["cabecera"].strip(), "", "---", "", "### Destacados", ""]
+    out = [cfg["cabecera"].strip(), "", "---", ""]
+    # El proyecto en foco: texto libre del toml, puede hablar de trabajo en privado.
+    if cfg.get("foco"):
+        out += [cfg["foco"].strip(), "", "---", ""]
+    out += ["### Destacados", ""]
     for n in cfg.get("destacados", []):
         r = por_nombre.get(n)
         if r is None:
