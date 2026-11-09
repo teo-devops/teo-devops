@@ -1,10 +1,31 @@
 ## Platform & MLOps Engineer
 
-**K8s · Bare-Metal · Argo CD · Cilium  |  Kubeflow · MLflow  |  PySpark  |  Data Spaces (EDC, Gaia-X)  |  MSc Big Data & AI**
+**Data Spaces (EDC · DSP · DCP)  |  K8s · Bare-Metal · Argo CD · Cilium  |  Kubeflow · MLflow  |  PySpark  |  MSc Big Data & AI**
 
 Diseño y opero clústeres Kubernetes sobre bare-metal —GitOps con Argo CD, red con Cilium,
 backup con Velero— y los pipelines de datos y modelos que corren encima.
 Trabajo sobre data spaces federados (EDC, Gaia-X). Cursando el MSc en Big Data & AI.
+
+---
+
+### 🌐 En foco: una plataforma de dataspaces, de la base al despliegue
+
+Construyo una plataforma completa de espacios de datos sobre
+[Eclipse Dataspace Components](https://github.com/eclipse-edc): desde una base de EDC
+**congelada y reproducible** hasta su despliegue GitOps en Kubernetes.
+
+| Pieza | Qué hace |
+|---|---|
+| **Base congelada** | Forks de [Connector](https://github.com/teo-devops/Connector) e [IdentityHub](https://github.com/teo-devops/IdentityHub) con la versión derivada del tag de git, y un *freezer* que publica los artefactos Maven en un registro propio |
+| **Runtimes** | Control plane, IdentityHub y emisor de credenciales: una imagen y una versión por componente |
+| **Data planes en Go** | Una librería de Data Plane Signaling y dos vías de datos: Envoy Gateway (PULL) y Bento (PUSH y PULL) |
+| **dsgen** | Genera un dataspace completo a partir de una spec YAML: Kustomize, plataforma, scripts y pruebas (CLI, API y UI) |
+| **dataspace-tck** | Comprobación de interoperabilidad en línea: entra en el dataspace como participante (did:web + DCP), hace de proveedor o de consumidor del conector bajo prueba y verifica DSP 2025-1 y la integridad de lo transferido, sin retener datos |
+| **GitOps** | Cada pieza, un workload de Argo CD sobre el plano de control multi-tenant de [Argo-cd-Labs](https://github.com/teo-devops/Argo-cd-Labs) |
+
+`Java` · `Go` · `Python` · `Kubernetes` · `Gateway API` · `Argo CD` · `DSP 2025-1` · `DCP` · `did:web` · `VC 2.0`
+
+*En preparación: la mayoría de los repos son privados de momento.*
 
 ---
 
@@ -45,9 +66,9 @@ Bento PUSH) que hablan Data Plane Signaling.
 | [Connector](https://github.com/teo-devops/Connector) *(fork)* | `eclipse-edc` · `java` | Fork de eclipse-edc/Connector con la base congelada en freeze/v1.0.0-RC1-1: versión derivada del tag de git, autodoc y firma adaptados |
 | [IdentityHub](https://github.com/teo-devops/IdentityHub) *(fork)* | `eclipse-edc` · `java` | Fork de eclipse-edc/IdentityHub con la base congelada en freeze/v1.0.0-RC1-1: misma derivación de versión que el Connector |
 
-El resto de la plataforma —umbrella con los paquetes Maven congelados, launchers, adaptadores DPS
-en Go, escenario MVD, freezer y skills de agente— está **en privado** mientras se aclara su
-titularidad.
+El resto de la plataforma —umbrella con los paquetes Maven congelados, launchers, data planes
+en Go, el generador dsgen y sus MVP, el TCK de interoperabilidad, freezer y skills de agente— está
+**en privado** mientras se aclara su titularidad.
 
 </details>
 
