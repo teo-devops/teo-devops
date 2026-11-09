@@ -34,14 +34,14 @@ Construyo una plataforma completa de espacios de datos sobre
 | **Runtimes** | Control plane, IdentityHub y emisor de credenciales: una imagen y una versión por componente |
 | **Data planes en Go** | Una librería de Data Plane Signaling y dos vías de datos: Envoy Gateway (PULL) y Bento (PUSH y PULL) |
 | **dsgen** | Genera un dataspace completo a partir de una spec YAML: Kustomize, plataforma, scripts y pruebas (CLI, API y UI) |
-| **dataspace-tck** | Comprobación de interoperabilidad en línea: entra en el dataspace como participante (did:web + DCP), hace de proveedor o de consumidor del conector bajo prueba y verifica DSP 2025-1 y la integridad de lo transferido, sin retener datos |
+| **[dataspace-tck](https://github.com/teo-devops/dataspace-tck)** | Comprobación de interoperabilidad en línea: entra en el dataspace como participante (did:web + DCP), hace de proveedor o de consumidor del conector bajo prueba y verifica DSP 2025-1 y la integridad de lo transferido, sin retener datos |
 | **GitOps** | Cada pieza, un workload de Argo CD sobre el plano de control multi-tenant de [Argo-cd-Labs](https://github.com/teo-devops/Argo-cd-Labs) |
 
 `Java` · `Go` · `Python` · `Kubernetes` · `Gateway API` · `Argo CD` · `DSP 2025-1` · `DCP` · `did:web` · `VC 2.0`
 
 *En preparación: la mayoría de los repos son privados de momento.*
 
-#### dataspace-tck — probar un conector sin montar otro al lado
+#### [dataspace-tck](https://github.com/teo-devops/dataspace-tck) — probar un conector sin montar otro al lado
 
 Un servicio en línea al que una empresa apunta su conector: el TCK entra en el dataspace con
 identidad propia y hace de la otra parte, y devuelve un informe con la evidencia de cada caso.
