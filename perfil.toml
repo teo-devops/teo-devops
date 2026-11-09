@@ -40,6 +40,24 @@ Construyo una plataforma completa de espacios de datos sobre
 `Java` · `Go` · `Python` · `Kubernetes` · `Gateway API` · `Argo CD` · `DSP 2025-1` · `DCP` · `did:web` · `VC 2.0`
 
 *En preparación: la mayoría de los repos son privados de momento.*
+
+#### dataspace-tck — probar un conector sin montar otro al lado
+
+Un servicio en línea al que una empresa apunta su conector: el TCK entra en el dataspace con
+identidad propia y hace de la otra parte, y devuelve un informe con la evidencia de cada caso.
+
+| Grupo | Qué comprueba |
+|---|---|
+| `PRO` | El conector habla DSP 2025-1 y no entrega nada sin identidad |
+| `IDN` · `SBX` | El TCK obtiene credenciales DCP como un participante más, o del emisor de pruebas |
+| `CON` · `PRV` | El TCK hace de consumidor o de proveedor del conector bajo prueba |
+| `INT` · `DAT` | Catálogo, negociación y transferencia PULL/PUSH; el dato llega entero y deja de llegar al terminar |
+
+- **Tres formas de usarlo:** CLI con salida Markdown o JUnit para CI, API, y una web guiada en cuatro pasos.
+- **Sin retener nada:** del dato solo guarda tamaño y SHA-256, redacta secretos y tokens, y bloquea destinos privados en el servicio público.
+- **Desplegable:** Go sin dependencias externas, imagen distroless, y Kustomize con un overlay de producción para Argo CD (Gateway API + TLS de cert-manager).
+
+*Comprobación de interoperabilidad, no un TCK oficial: no está afiliado a la Eclipse Foundation, IDSA ni DSSC.*
 """
 
 # Los destacados, en orden. La descripción sale del repo.
