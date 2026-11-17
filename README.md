@@ -55,6 +55,7 @@ Cada área es un topic filtrable y una lista navegable.
 | Área | Repos | Explorar |
 |---|---|---|
 | 🌐 **Dataspaces** | 2 | [lista](https://github.com/stars/teo-devops/lists/dataspaces) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-dataspaces&type=repositories) |
+| 🏠 **Homelab** | 1 | [lista](https://github.com/stars/teo-devops/lists/homelab) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-homelab&type=repositories) |
 | ☸️ **Kubernetes** | 4 | [lista](https://github.com/stars/teo-devops/lists/kubernetes) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-kubernetes&type=repositories) |
 | 📈 **MLOps** | 7 | [lista](https://github.com/stars/teo-devops/lists/mlops) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-mlops&type=repositories) |
 | 🗄️ **Data Engineering** | 5 | [lista](https://github.com/stars/teo-devops/lists/data-engineering) · [topic](https://github.com/search?q=user%3Ateo-devops%20topic%3Aarea-data-engineering&type=repositories) |
@@ -79,6 +80,18 @@ Bento PUSH) que hablan Data Plane Signaling.
 El resto de la plataforma —umbrella con los paquetes Maven congelados, launchers, data planes
 en Go, el generador dsgen y sus MVP, el TCK de interoperabilidad, freezer y skills de agente— está
 **en privado** mientras se aclara su titularidad.
+
+</details>
+
+<details>
+<summary><b>🏠 Homelab</b> — 1 repos</summary>
+
+Laboratorios en casa sobre hardware propio, construidos por fases y explicados para aprender:
+del sistema operativo a GitOps, con cada decisión de diseño documentada.
+
+| Repo | Stack | Qué es |
+|---|---|---|
+| [rpi-k3s-homelab](https://github.com/teo-devops/rpi-k3s-homelab) | `ansible` · `cilium` · `fluxcd` | Clúster K3s educativo sobre 3 Raspberry Pi distintas (8/4/2 GB): Ansible, Cilium, Flux, SOPS y una guía paso a paso en español |
 
 </details>
 

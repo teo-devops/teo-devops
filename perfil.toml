@@ -72,6 +72,14 @@ en Go, el generador dsgen y sus MVP, el TCK de interoperabilidad, freezer y skil
 **en privado** mientras se aclara su titularidad.
 """
 
+[areas.homelab]
+emoji = "🏠"
+nombre = "Homelab"
+intro = """
+Laboratorios en casa sobre hardware propio, construidos por fases y explicados para aprender:
+del sistema operativo a GitOps, con cada decisión de diseño documentada.
+"""
+
 [areas.kubernetes]
 emoji = "☸️"
 nombre = "Kubernetes"
